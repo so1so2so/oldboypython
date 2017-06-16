@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .head{
+            height: 48px;
+            background-color: #31708f;
+            color: blue;
+            line-height: 48px;
+        }
+        .rigth1{
+            float: right;
+
+        }
+        .left1{
+            float: left;
+        }
+        .left{
+            position: absolute;
+            top: 48px;
+            left: 0px;
+            bottom: 0px;
+            width: 200px;
+            background-color: #1c5a9c;
+        }
+        .right{
+            position: absolute;
+            top: 48px;
+            left: 200px;
+            bottom: 0px;
+            right: 0px;
+            background-color: #7c6585;
+            overflow: auto;
+            z-index: 10;
+        }
+        .head .logo{
+            width: 200px;
+            background-color: #554b96;
+            text-align: center;
+            font-size: 48px;
+        }
+        .head .user{
+            width: 200px;
+            background-color: #6e5696;
+            text-align: center;
+            font-size: 18px;
+            height: 48px;
+        }
+        .head .user .a img{
+            width: 40px;
+            height:40px;
+            border-radius: 50%;
+            margin-top: 4px;
+        }
+        /*鼠标移动事件hover*/
+        /*当鼠标移动到.head .user更改样式, 后面在加.b表示对B生效*/
+        .head .user:hover .b{
+            /*background-color: whitesmoke;*/
+            display: inline-block;
+        }
+        .head .user .b{
+            position: absolute;
+            top: 48px;
+            right: 20px;
+            background-color: #f4f3ff;
+            z-index: 15;
+            width: 160px;
+            display: none;
+        }
+        .head .user .b a{
+            display: block;
+        }
+    </style>
+</head>
+<body style="margin: 0 auto">
+<div class="head">
+    <div class="logo left1" style="position: relative">老男孩</div>
+    <div class="user rigth1">
+        <a  class="a" href="1.png">
+            <img src="1.png" >
+             <!--style="width:-->
+             <!--40px;height:40px;-->
+             <!--border-radius: 50%;-->
+             <!--margin-top: 4px" >-->
+        </a>
+        <div class="b">
+            <a href="1.png">我的资料</a>
+            <a href="http://www.baidu.com">我的资料</a>
+            <a>我的资料</a>
+        </div>
+    </div>
+</div>
+<div class="left">2</div>
+    <div class="right">
+        <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+        <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+        <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+        <p>1</p><p>1</p><p>1</p><p>1</p>
+        <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+    </div>
+</body>
+</html>
